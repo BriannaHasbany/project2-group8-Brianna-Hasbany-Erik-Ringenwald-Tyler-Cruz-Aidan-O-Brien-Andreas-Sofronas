@@ -72,6 +72,7 @@ main {
 .text-block-right .text-content {
   flex: 1; /* allows text to stretch */
   font-family: "Libre Baskerville", serif;
+  transform: translateX(-350px) translateY(-200px);
   color: #333;
 }
 
