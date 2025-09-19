@@ -1,12 +1,12 @@
 body {
-  font-family: "Norwester", serif;
+  font-family: "Libre Baskerville";
   margin: 0;
   padding: 0;
   line-height: 1.6;
   color: #333;
 }
 header {
-  font-family: "Kollektif", sans-serif;
+  font-family: "Quicksand";
   background: #003366;
   color: rgb(16, 16, 16);
   padding: 20px;
@@ -16,12 +16,14 @@ header {
   background-repeat: no-repeat; 
   background-position: center; 
 }
-
+h1,h2,h3 {
+  font-family: "Quicksand";
+}
 header nav a {
   color: rgb(18, 18, 18);
   text-decoration: none;
   margin: 0 10px;
-  font-family: "Norwester"
+  font-family: "Quicksand"
 }
 header nav a:hover {
   text-decoration: underline;
@@ -29,6 +31,61 @@ header nav a:hover {
 main {
   padding: 20px;
 }
+
+.company-message {
+  width: 100%;
+  background-color: #e7d0f7; 
+  color: #ffffff;          
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.company-message h1 {
+  font-family: 'Papyrus', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.text-block-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.text-block-right img {
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-block-right img.logo {
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+  transform: translateX(-350px) translateY(-200px) rotate(-10deg); 
+  transition: transform 0.3s ease; /
+}
+
+.text-block-right .text-content {
+  flex: 1; /* allows text to stretch */
+  font-family: "Libre Baskerville", serif;
+  color: #333;
+}
+
+.text-block-right h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-block-right p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
 footer {
   text-align: center;
   padding: 10px;
