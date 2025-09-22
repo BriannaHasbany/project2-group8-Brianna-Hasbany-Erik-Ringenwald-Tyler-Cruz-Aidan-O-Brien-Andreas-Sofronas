@@ -48,43 +48,44 @@ main {
 }
 
 
-.text-block-right {
+.text-block-right-home {
   display: flex;
-  align-items: center;
-  gap: 30px;
-  margin: 40px auto;
-  max-width: 1000px;
+  align-items: flex-start;   /* aligns text with top of image */
+  gap: 20px;                 /* smaller gap between image & text */
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 40px;
+  position: relative;
+  transform: translateY(-150px);  /* moves the whole section up */
 }
 
-.text-block-right img {
+.text-block-right-home img.logo {
+  width: 650px;              /* bigger logo */
   height: auto;
   border-radius: 10px;
+  transform: translateX(-100px) rotate(-10deg); 
+  flex-shrink: 0;            /* prevents shrinking */
 }
 
-.text-block-right img.logo {
-  width: 700px;
-  height: auto;
-  border-radius: 10px;
-  transform: translateX(-350px) translateY(-200px) rotate(-10deg); 
-  transition: transform 0.3s ease; /
-}
-
-.text-block-right .text-content {
-  flex: 1; /* allows text to stretch */
+.text-block-right-home .text-content {
+  flex: 1;
   font-family: "Libre Baskerville", serif;
-  transform: translateX(-350px) translateY(-200px);
   color: #333;
+  margin-top: 300px; /* push text down until it lines up with logo */
 }
 
-.text-block-right h2 {
-  font-size: 2rem;
+
+.text-block-right-home h2 {
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-.text-block-right p {
+.text-block-right-home p {
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
+
+
 
 
 footer {
