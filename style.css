@@ -63,7 +63,7 @@ main {
   width: 600px;            /* larger logo */
   height: auto;
   border-radius: 10px;
-  transform: translateX(-80px) rotate(-10deg); 
+  transform: translateX(-80px); 
   flex-shrink: 0;          /* keeps image size */
 }
 
@@ -192,6 +192,69 @@ main {
   line-height: 1.6;
   color: #333;
 }
+
+.resources-section {
+  background-color: #ffffff; 
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.resources-section h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000; 
+}
+
+/* Table styling */
+.resources-table {
+  width: 80%;
+  margin: 0 auto 30px auto; /* centers table and adds bottom spacing */
+  border-collapse: collapse;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.resources-table th,
+.resources-table td {
+  border: 1px solid #ffffff;
+  padding: 10px 15px;
+}
+
+.resources-table th {
+  background-color: #9b59b6; /* darker purple header */
+  color: #ffffff;
+}
+
+.resources-table tr:nth-child(even) {
+  background-color: #d9b3f0; /* light purple rows */
+}
+
+.resources-table tr:nth-child(odd) {
+  background-color: #f0e0f8;
+}
+
+.resources-table a {
+  color: #000000; 
+  text-decoration: none;
+}
+
+.resources-table a:hover {
+  text-decoration: underline;
+}
+
+/* Instagram posts styling */
+.instagram-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.instagram-media {
+  max-width: 350px;
+  width: 100%;
+}
+
 
 .site-footer {
   display: flex;
