@@ -38,6 +38,7 @@ main {
   color: #ffffff;          
   text-align: center;
   padding: 80px 20px;
+  margin-bottom: 0;
 }
 
 .company-message h1 {
@@ -50,34 +51,31 @@ main {
 
 .text-block-right-home {
   display: flex;
-  align-items: flex-start;   /* aligns text with top of image */
-  gap: 20px;                 /* smaller gap between image & text */
-  margin: 0 auto;
-  max-width: 1300px;
+  align-items: center;
+  gap: 60px;               /* space between logo and text */
+  margin: 40px auto;
+  max-width: 1300px;       /* wider container */
   padding: 0 40px;
-  position: relative;
-  transform: translateY(-150px);  /* moves the whole section up */
+  position: relative;      /* allows logo to shift outside */
 }
 
 .text-block-right-home img.logo {
-  width: 650px;              /* bigger logo */
+  width: 600px;            /* larger logo */
   height: auto;
   border-radius: 10px;
-  transform: translateX(-100px) rotate(-10deg); 
-  flex-shrink: 0;            /* prevents shrinking */
+  transform: translateX(-80px) rotate(-10deg); 
+  flex-shrink: 0;          /* keeps image size */
 }
 
 .text-block-right-home .text-content {
-  flex: 1;
+  flex: 1;                 /* text stretches */
   font-family: "Libre Baskerville", serif;
   color: #333;
-  margin-top: 300px; /* push text down until it lines up with logo */
 }
 
-
 .text-block-right-home h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;       /* bigger headline */
+  margin-bottom: 15px;
 }
 
 .text-block-right-home p {
@@ -87,10 +85,150 @@ main {
 
 
 
+.definitions {
+  background-color: #e7d0f7; 
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 0;
+  width: 100%; 
+}
 
-footer {
+.definitions h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
   text-align: center;
-  padding: 10px;
-  background: #ffffff;
-  margin-top: 20px;
+}
+
+.definition-table {
+  width: 100%; /* span the page */
+  border-collapse: collapse;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.1rem;
+}
+
+.definition-table th {
+  background-color: #ff914d; /* orange header */
+  color: #fff;
+  padding: 14px;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+}
+
+.definition-table td {
+  padding: 14px;
+  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  text-align: left;
+  vertical-align: top;
+}
+
+.definition-table tr:nth-child(even) td {
+  background-color: #f8f1fb; /* very light purple for alternating rows */
+}
+
+.did-you-know {
+  background-color: #fff5e6; /* soft orange background */
+  border-left: 10px solid #ff9933; /* thicker accent bar */
+  padding: 30px 40px;
+  margin: 60px auto; /* pushes it down */
+  width: 90%;        /* wider across the page */
+  max-width: 1200px; /* keeps it from stretching too far on huge screens */
+  border-radius: 10px;
+  font-family: "Libre Baskerville", serif;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.did-you-know h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.did-you-know p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.team-page {
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f5eaff; /* light purple background */
+}
+
+.team-member {
+  background-color: #ffffff; /* white cards */
+  border-left: 6px solid #ff914d; /* orange accent */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.team-member h2 .role {
+  font-style: italic;
+  font-weight: 400;
+  color: #ff914d; /* orange accent for role */
+}
+
+.team-member ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between; /* left and right sides */
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #e7d0f7; 
+  color: #000000;
+  font-family: "Libre Baskerville", serif;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.footer-left p {
+  margin: 2px 0; /* reduce vertical spacing */
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between donate link and logo */
+}
+
+.footer-right a.donate-link {
+  background-color: #ff914d; /* orange button */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+.footer-right a.donate-link:hover {
+  background-color: #e67e22;
+}
+
+.footer-right img.footer-logo {
+  width: 100px;
+  height: auto;
 }
