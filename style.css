@@ -154,6 +154,32 @@ main {
   color: #444;
 }
 
+.faith-recovery {
+  background-color: #c6b3e6; /* light purple background */
+  border-right: 10px solid #ad3ec9; /* thicker accent bar */
+  padding: 30px 40px;
+  margin: 60px auto; /* pushes it down */
+  width: 90%;        /* wider across the page */
+  max-width: 1200px; /* keeps it from stretching too far on huge screens */
+  border-radius: 10px;
+  font-family: "Libre Baskerville", serif;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.faith-recovery h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.faith-recovery p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+
 .team-page {
   margin: 0 auto;
   padding: 40px 20px;
@@ -194,7 +220,7 @@ main {
 }
 
 .resources-section {
-  background-color: #ffffff; 
+  background-color: #f5eaff; 
   padding: 40px 20px;
   text-align: center;
 }
@@ -230,7 +256,7 @@ main {
 }
 
 .resources-table tr:nth-child(odd) {
-  background-color: #f0e0f8;
+  background-color: #f8f4f4;
 }
 
 .resources-table a {
