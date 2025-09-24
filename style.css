@@ -1,3 +1,4 @@
+/* General Styling for body and header*/
 body {
   font-family: "Libre Baskerville";
   margin: 0;
@@ -12,18 +13,20 @@ header {
   padding: 20px;
   text-align: center;
   background-image: url("images/np-header.png");
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family: "Quicksand";
 }
 header nav a {
   color: rgb(18, 18, 18);
   text-decoration: none;
   margin: 0 10px;
-  font-family: "Quicksand"
+  font-family: "Quicksand";
 }
 header nav a:hover {
   text-decoration: underline;
@@ -31,50 +34,120 @@ header nav a:hover {
 main {
   padding: 20px;
 }
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #e7d0f7;
+  color: #000000;
+  font-family: "Libre Baskerville", serif;
+  flex-wrap: wrap;
+}
+.footer-left p {
+  margin: 2px 0;
+}
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-right a.donate-link {
+  background-color: #ff914d;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.footer-right a.donate-link:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+.footer-right img.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+.footer-right a.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e1306c;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-right a.instagram-btn:hover {
+  background-color: #c13584;
+  transform: scale(1.05);
+}
+
+.footer-right a.instagram-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Company Message and Contact Header */
 .company-message {
   width: 100%;
-  background-color: #e7d0f7; 
-  color: #ffffff;          
+  background-color: #e7d0f7;
+  color: #ffffff;
   text-align: center;
   padding: 80px 20px;
   margin-bottom: 0;
 }
 
 .company-message h1 {
-  font-family: 'Papyrus', sans-serif;
+  font-family: "Papyrus", sans-serif;
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
 }
 
+/* Homepage Styling */
 
 .text-block-right-home {
   display: flex;
   align-items: center;
-  gap: 60px;               /* space between logo and text */
+  gap: 60px;
   margin: 40px auto;
-  max-width: 1300px;       /* wider container */
+  max-width: 1300px;
   padding: 0 40px;
-  position: relative;      /* allows logo to shift outside */
+  position: relative;
 }
 
 .text-block-right-home img.logo {
-  width: 600px;            /* larger logo */
+  width: 600px;
   height: auto;
   border-radius: 10px;
-  transform: translateX(-80px); 
-  flex-shrink: 0;          /* keeps image size */
+  transform: translateX(-80px);
+  flex-shrink: 0;
 }
 
 .text-block-right-home .text-content {
-  flex: 1;                 /* text stretches */
+  flex: 1;
   font-family: "Libre Baskerville", serif;
   color: #333;
 }
 
 .text-block-right-home h2 {
-  font-size: 2.5rem;       /* bigger headline */
+  font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
@@ -83,14 +156,12 @@ main {
   line-height: 1.6;
 }
 
-
-
 .definitions {
-  background-color: #e7d0f7; 
+  background-color: #e7d0f7;
   padding: 40px 20px;
   border-radius: 10px;
   margin-top: 0;
-  width: 100%; 
+  width: 100%;
 }
 
 .definitions h2 {
@@ -102,14 +173,14 @@ main {
 }
 
 .definition-table {
-  width: 100%; /* span the page */
+  width: 100%;
   border-collapse: collapse;
   font-family: "Libre Baskerville", serif;
   font-size: 1.1rem;
 }
 
 .definition-table th {
-  background-color: #ff914d; /* orange header */
+  background-color: #ff914d;
   color: #fff;
   padding: 14px;
   text-align: left;
@@ -126,19 +197,19 @@ main {
 }
 
 .definition-table tr:nth-child(even) td {
-  background-color: #f8f1fb; /* very light purple for alternating rows */
+  background-color: #f8f1fb;
 }
 
 .did-you-know {
-  background-color: #fff5e6; /* soft orange background */
-  border-left: 10px solid #ff9933; /* thicker accent bar */
+  background-color: #fff5e6;
+  border-left: 10px solid #ff9933;
   padding: 30px 40px;
-  margin: 60px auto; /* pushes it down */
-  width: 90%;        /* wider across the page */
-  max-width: 1200px; /* keeps it from stretching too far on huge screens */
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1200px;
   border-radius: 10px;
   font-family: "Libre Baskerville", serif;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .did-you-know h2 {
@@ -155,15 +226,15 @@ main {
 }
 
 .faith-recovery {
-  background-color: #c6b3e6; /* light purple background */
-  border-right: 10px solid #ad3ec9; /* thicker accent bar */
+  background-color: #c6b3e6;
+  border-right: 10px solid #ad3ec9;
   padding: 30px 40px;
-  margin: 60px auto; /* pushes it down */
-  width: 90%;        /* wider across the page */
-  max-width: 1200px; /* keeps it from stretching too far on huge screens */
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1200px;
   border-radius: 10px;
   font-family: "Libre Baskerville", serif;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .faith-recovery h2 {
@@ -179,20 +250,49 @@ main {
   color: #fff;
 }
 
+/* Meet Us Page Styling*/
+.team-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f6f2ea;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.team-intro h1 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  color: #4a148c;
+  font-family: "Libre Baskerville", serif;
+}
+
+.team-intro p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.team-icon {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
 
 .team-page {
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #f5eaff; /* light purple background */
+  background-color: #f5eaff;
 }
 
 .team-member {
-  background-color: #ffffff; /* white cards */
-  border-left: 6px solid #ff914d; /* orange accent */
+  background-color: #ffffff;
+  border-left: 6px solid #ff914d;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -207,7 +307,7 @@ main {
 .team-member h2 .role {
   font-style: italic;
   font-weight: 400;
-  color: #ff914d; /* orange accent for role */
+  color: #ff914d;
 }
 
 .team-member ul {
@@ -220,24 +320,24 @@ main {
 }
 
 .resources-section {
-  background-color: #f5eaff; 
+  background-color: #f5eaff;
   padding: 40px 20px;
   text-align: center;
 }
 
 .resources-section h2 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #000000; 
+  color: #000000;
 }
 
-/* Table styling */
+/* Resources Page Styling */
 .resources-table {
   width: 80%;
-  margin: 0 auto 30px auto; /* centers table and adds bottom spacing */
+  margin: 0 auto 30px auto;
   border-collapse: collapse;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 .resources-table th,
@@ -247,12 +347,12 @@ main {
 }
 
 .resources-table th {
-  background-color: #9b59b6; /* darker purple header */
+  background-color: #9b59b6;
   color: #ffffff;
 }
 
 .resources-table tr:nth-child(even) {
-  background-color: #d9b3f0; /* light purple rows */
+  background-color: #d9b3f0;
 }
 
 .resources-table tr:nth-child(odd) {
@@ -260,7 +360,7 @@ main {
 }
 
 .resources-table a {
-  color: #000000; 
+  color: #000000;
   text-decoration: none;
 }
 
@@ -268,7 +368,6 @@ main {
   text-decoration: underline;
 }
 
-/* Instagram posts styling */
 .instagram-posts {
   display: flex;
   flex-wrap: wrap;
@@ -279,45 +378,4 @@ main {
 .instagram-media {
   max-width: 350px;
   width: 100%;
-}
-
-
-.site-footer {
-  display: flex;
-  justify-content: space-between; /* left and right sides */
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #e7d0f7; 
-  color: #000000;
-  font-family: "Libre Baskerville", serif;
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
-}
-
-.footer-left p {
-  margin: 2px 0; /* reduce vertical spacing */
-}
-
-.footer-right {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* space between donate link and logo */
-}
-
-.footer-right a.donate-link {
-  background-color: #ff914d; /* orange button */
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-}
-
-.footer-right a.donate-link:hover {
-  background-color: #e67e22;
-}
-
-.footer-right img.footer-logo {
-  width: 100px;
-  height: auto;
 }
