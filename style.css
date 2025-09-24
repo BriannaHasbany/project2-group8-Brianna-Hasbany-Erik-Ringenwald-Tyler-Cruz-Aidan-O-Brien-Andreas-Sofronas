@@ -63,7 +63,7 @@ main {
   width: 600px;            /* larger logo */
   height: auto;
   border-radius: 10px;
-  transform: translateX(-80px) rotate(-10deg); 
+  transform: translateX(-80px); 
   flex-shrink: 0;          /* keeps image size */
 }
 
@@ -154,6 +154,32 @@ main {
   color: #444;
 }
 
+.faith-recovery {
+  background-color: #c6b3e6; /* light purple background */
+  border-right: 10px solid #ad3ec9; /* thicker accent bar */
+  padding: 30px 40px;
+  margin: 60px auto; /* pushes it down */
+  width: 90%;        /* wider across the page */
+  max-width: 1200px; /* keeps it from stretching too far on huge screens */
+  border-radius: 10px;
+  font-family: "Libre Baskerville", serif;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.faith-recovery h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.faith-recovery p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+
 .team-page {
   margin: 0 auto;
   padding: 40px 20px;
@@ -192,6 +218,69 @@ main {
   line-height: 1.6;
   color: #333;
 }
+
+.resources-section {
+  background-color: #f5eaff; 
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.resources-section h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000; 
+}
+
+/* Table styling */
+.resources-table {
+  width: 80%;
+  margin: 0 auto 30px auto; /* centers table and adds bottom spacing */
+  border-collapse: collapse;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.resources-table th,
+.resources-table td {
+  border: 1px solid #ffffff;
+  padding: 10px 15px;
+}
+
+.resources-table th {
+  background-color: #9b59b6; /* darker purple header */
+  color: #ffffff;
+}
+
+.resources-table tr:nth-child(even) {
+  background-color: #d9b3f0; /* light purple rows */
+}
+
+.resources-table tr:nth-child(odd) {
+  background-color: #f8f4f4;
+}
+
+.resources-table a {
+  color: #000000; 
+  text-decoration: none;
+}
+
+.resources-table a:hover {
+  text-decoration: underline;
+}
+
+/* Instagram posts styling */
+.instagram-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.instagram-media {
+  max-width: 350px;
+  width: 100%;
+}
+
 
 .site-footer {
   display: flex;
