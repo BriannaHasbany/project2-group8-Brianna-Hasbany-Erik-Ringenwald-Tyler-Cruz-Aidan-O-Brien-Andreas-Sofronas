@@ -27,6 +27,7 @@ This project reimagines the Faith & Recovery Network’s website with a focus on
 - Planned space for **partnerships and an image** to highlight collaboration.  
 
 ### Our Team  
+- Edited the team to include our team members for this project - this includes creating new titles and descriptions.
 - Reformatted the team section into **individual cards** for each member.  
 - Added a **“Meet Our Team” heading with supporting imagery**.  
 - Broke long text blocks into cleaner, scannable sections.  
