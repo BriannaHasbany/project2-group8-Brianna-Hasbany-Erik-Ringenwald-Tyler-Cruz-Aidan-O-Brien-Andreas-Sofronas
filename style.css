@@ -31,6 +31,12 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #4a148c;
+  text-align: center;
+}
 main {
   padding: 20px;
 }
@@ -388,8 +394,99 @@ main {
   height: 300px;
   background: grey;
   padding: 1em;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 2em;
   color: #ffffff;
 }
+
+.about-header {
+  background-image: url("images/np-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 20px;
+  position: relative;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #4a148c;
+  background: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.about-header .logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.about-header .logo-container img {
+  height: 150px;
+  width: auto;
+}
+
+.about-header .partner-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-header nav {
+  margin-top: 10px;
+}
+
+.about-header nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: "Quicksand";
+}
+
+.about-header nav a:hover {
+  text-decoration: underline;
+}
+
+  .about-section {
+        background-color: #f5eaf5;
+        padding: 40px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+      }
+
+      .about-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #4a148c;
+      }
+
+      .about-section p {
+        font-size: 1.2rem;
+        line-height: 1.7;
+      }
+
+      .mission-section {
+        background-color: #e7d0e7;
+        padding: 40px;
+        border-radius: 12px;
+      }
+
+      .mission-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #4a148c;
+      }
+
+      .mission-section p {
+        font-size: 1.2rem;
+        line-height: 1.7;
+      }
