@@ -456,37 +456,37 @@ main {
   text-decoration: underline;
 }
 
-  .about-section {
-        background-color: #f5eaf5;
-        padding: 40px;
-        border-radius: 12px;
-        margin-bottom: 40px;
-      }
+.about-section {
+  background-color: #f5eaf5;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
 
-      .about-section h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #4a148c;
-      }
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4a148c;
+}
 
-      .about-section p {
-        font-size: 1.2rem;
-        line-height: 1.7;
-      }
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
 
-      .mission-section {
-        background-color: #e7d0e7;
-        padding: 40px;
-        border-radius: 12px;
-      }
+.mission-section {
+  background-color: #e7d0e7;
+  padding: 40px;
+  border-radius: 12px;
+}
 
-      .mission-section h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #4a148c;
-      }
+.mission-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4a148c;
+}
 
-      .mission-section p {
-        font-size: 1.2rem;
-        line-height: 1.7;
-      }
+.mission-section p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
