@@ -364,10 +364,15 @@ main {
   margin-bottom: 10px;
 }
 
+/* Resources Page Styling */
 .resources-section {
   background-color: #f5eaff;
   padding: 40px 20px;
   text-align: center;
+}
+
+.resources-header {
+  background-color: #f5eaff;
 }
 
 .resources-section h2 {
@@ -377,7 +382,7 @@ main {
   color: #000000;
 }
 
-/* Resources Page Styling */
+
 .resources-table {
   width: 80%;
   margin: 0 auto 30px auto;
@@ -421,10 +426,11 @@ main {
 }
 
 .instagram-media {
-  max-width: 350px;
+  max-width: 500px;
   width: 100%;
 }
 
+/* Services Page */
 .carousel {
   position: relative;
 }
@@ -439,6 +445,7 @@ main {
   color: #ffffff;
 }
 
+/* About Us Page */
 .about-header {
   background-image: url("images/np-header.png");
   background-size: cover;
@@ -530,6 +537,8 @@ main {
   font-size: 1.2rem;
   line-height: 1.7;
 }
+
+/*Contact Page*/
 
 .contact {
   background-color: #f9dec8;
