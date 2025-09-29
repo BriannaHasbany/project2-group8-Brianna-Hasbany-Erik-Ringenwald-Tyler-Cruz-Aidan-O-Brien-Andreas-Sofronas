@@ -448,10 +448,11 @@ main {
   font-size: 2em;
   color: #ffffff;
   animation: display1 15s infinite;
-  display: inline-block; /* shrink background to content (image) */
+  display: inline-block; 
   position: absolute;
   left: 35%;
-  width: auto; /* let the image decide width */
+  width: auto; 
+  opacity: 0;
 }
 
 @keyframes display1 {
@@ -476,6 +477,7 @@ main {
     opacity: 0;
   }
 }
+
 
 #carousel > .carousel__item:nth-child(2) {
   animation-delay: 5s;
