@@ -5,7 +5,6 @@ body {
   padding: 0;
   line-height: 1.6;
   color: #333;
-
 }
 header {
   font-family: "Quicksand";
@@ -259,21 +258,20 @@ main {
 
 .faith-wrapper {
   display: flex;
-  align-items: center; 
-  gap: 20px;           
+  align-items: center;
+  gap: 20px;
 }
 
 .faith-img {
-  max-width: 300px; 
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
 }
 
 .faith-container {
-  flex: 1;             
-  text-align: right;  
+  flex: 1;
+  text-align: right;
 }
-
 
 /* Meet Us Page Styling*/
 .team-intro {
@@ -346,9 +344,9 @@ main {
 }
 
 .teame-figure {
-  text-align: center;   
-  max-width: 280px;     
-  margin: 0 auto;       
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .team-figure figcaption {
@@ -381,7 +379,6 @@ main {
   margin-bottom: 20px;
   color: #000000;
 }
-
 
 .resources-table {
   width: 80%;
@@ -443,28 +440,25 @@ main {
   display: block;
   height: 700px;
 }
-
 .carousel__item {
-  /* height: 300px; */
-  background: grey;
+  background: #ff914d;
   padding: 1em;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 2em;
   color: #ffffff;
-  /* display: block; */
   animation: display1 15s infinite;
-  display: inline-block;
+  display: inline-block; /* shrink background to content (image) */
   position: absolute;
-  width: 20%;
-  left: 40%;
+  left: 35%;
+  width: auto; /* let the image decide width */
 }
 
 @keyframes display1 {
   0% {
-      transform: translateX(50%);
-      opacity: 0;
-    }
+    transform: translateX(50%);
+    opacity: 0;
+  }
   10% {
     transform: translateX(0);
     opacity: 1;
@@ -513,14 +507,14 @@ main {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.6);
   display: block;
   cursor: pointer;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .carousel__button--selected {
   background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(0,0,0,0.08) inset;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08) inset;
 }
 
 .carousel__nav {
@@ -545,8 +539,6 @@ main {
 .carousel__button--selected {
   background: rgba(255, 255, 255, 0.5);
 }
-
-
 
 /* About Us Page */
 .about-header {
@@ -653,15 +645,13 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 1000px;
-  width:90%;
+  width: 90%;
   margin: auto;
   transform: translateY(30px);
 }
 
-form, 
+form,
 form * {
   font-family: "Libre Baskerville", serif;
-   color: #000000; 
+  color: #000000;
 }
-
-
